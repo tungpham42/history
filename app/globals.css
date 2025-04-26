@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Nunito Sans", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Crimson Pro", serif !important;
+}
+.masked-word {
+  font-family: "Sono", monospace !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.card,
+.list-group-item {
+  border: none !important;
+}
+.timeline-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  font-weight: 700 !important;
+  color: white !important;
+}
+.trongdong {
+  background: url("/public/images/trongdong_100.webp") no-repeat top left /
+    cover;
+  animation: xoayanh 12s infinite linear;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+.trongdong:hover {
+  animation: xoayanh 3s infinite linear;
+}
+@keyframes xoayanh {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.site-title {
+  font-family: "Cormorant Unicase", serif !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  color: #df382c;
+}
+@media all and (max-width: 768px) {
+  .site-title {
+    font-size: calc(1rem + 3.5vw) !important;
+  }
+}
+@media all and (max-width: 420px) {
+  .site-title {
+    float: right;
+  }
+}
+@media all and (max-width: 400px) {
+  .hero {
+    display: none;
+  }
+}
+.hero {
+  background-color: #ffe9bc;
+  background-image: url(/public/images/header-bg.webp);
+  background-repeat: repeat;
+  background-position: center;
+}
+.flame-text {
+  text-transform: uppercase;
+  text-shadow: 0 0 0.1rem #ff4500, 0 0 0.2rem #ff6347, 0 0 0.3rem #ff0000;
+  animation: flicker 3s infinite alternate ease-in-out;
+}
+@keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 0.1rem #ff4500, 0 0 0.2rem #ff6347, 0 0 0.3rem #ff0000;
+  }
+  50% {
+    text-shadow: 0 0 0.2rem #ff4500, 0 0 0.4rem #ff6347, 0 0 0.6rem #ff0000;
+  }
+}
+.custom-card-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+}
+
+.custom-card-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.fixed-navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s linear;
+}
+@media all and (min-width: 992px) {
+  .nav-link {
+    position: relative;
+  }
+  /* Underline effect */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  /* Active link underline */
+  .nav-link.active::after,
+  .navbar-nav:hover .nav-link.active:hover::after {
+    width: 100%;
+  }
+
+  /* Hover effect */
+  .nav-link:hover::after {
+    width: 100%;
+    background-color: white;
+  }
+
+  /* Remove active underline when hovering on another nav-link */
+  .navbar-nav:hover .nav-link.active::after {
+    width: 0;
+  }
+}
+@media all and (max-width: 991.99px) {
+  .nav-link {
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+  .fixed-navbar {
+    position: relative !important;
+  }
+}
