@@ -2,7 +2,6 @@
 "use client";
 
 import React, { useState, useEffect, Suspense } from "react";
-import Head from "next/head";
 import lessons from "@/data/lessons.json";
 import { useSearchParams } from "next/navigation";
 import { Row, Col, Card, Button, Modal, Alert, Spinner } from "react-bootstrap";
@@ -73,23 +72,6 @@ const SearchResultsContent = () => {
 
   return (
     <>
-      <Head>
-        <title>Tìm Kiếm Lịch Sử Việt Nam</title>
-        <meta
-          name="description"
-          content="Tìm kiếm các bài học và sự kiện lịch sử Việt Nam dựa trên từ khóa của bạn."
-        />
-        <meta property="og:title" content="Tìm Kiếm Lịch Sử Việt Nam" />
-        <meta
-          property="og:description"
-          content="Khám phá các bài học lịch sử Việt Nam thông qua công cụ tìm kiếm mạnh mẽ."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lichsu.io.vn/tim-kiem" />
-        <meta property="og:image" content="https://lichsu.io.vn/1200x630.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-      </Head>
       <h1 className="text-center mb-4">
         Kết quả tìm kiếm cho &ldquo;{query}&rdquo;
       </h1>

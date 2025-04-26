@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Head from "next/head";
 import { Row, Col, Card, Button, Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faVideo, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -27,23 +26,6 @@ function HistoryLessons() {
 
   return (
     <>
-      <Head>
-        <title>Bài Học Lịch Sử Việt Nam</title>
-        <meta
-          name="description"
-          content="Khám phá các bài học chi tiết về lịch sử Việt Nam với hình ảnh và video minh họa."
-        />
-        <meta property="og:title" content="Bài Học Lịch Sử Việt Nam" />
-        <meta
-          property="og:description"
-          content="Tìm hiểu lịch sử Việt Nam qua các bài học phong phú với nội dung chi tiết và video hấp dẫn."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lichsu.io.vn/bai-hoc" />
-        <meta property="og:image" content="https://lichsu.io.vn/1200x630.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-      </Head>
       <h1 className="mb-4 text-center">Bài Học Lịch Sử</h1>
       <Row>
         {lessons.map((lesson) => (
