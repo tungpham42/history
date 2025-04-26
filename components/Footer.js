@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
           {", "}
           <a
-            href="https://github.com/tungpham42/lichsu"
+            href="https://github.com/tungpham42/history"
             target="_blank"
             rel="noopener noreferrer"
             className="text-light text-decoration-none"
