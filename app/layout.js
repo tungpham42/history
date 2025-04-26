@@ -37,6 +37,23 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="vi">
+      <head>
+        <title>Chào Mừng Đến Với Lịch Sử Việt Nam</title>
+        <meta
+          name="description"
+          content="Khám phá lịch sử Việt Nam qua những câu trích dẫn nổi bật và các bài học lịch sử phong phú."
+        />
+        <meta property="og:title" content="Lịch Sử Việt Nam - Trang Chủ" />
+        <meta
+          property="og:description"
+          content="Tìm hiểu về lịch sử Việt Nam qua các câu trích dẫn truyền cảm hứng và nội dung giáo dục."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lichsu.io.vn" />
+        <meta property="og:image" content="https://lichsu.io.vn/1200x630.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+      </head>
       <body>
         <Header />
         <Container
