@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/united/bootstrap.css";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
-import Footer from "../components/Footer";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Chào Mừng Đến Với Lịch Sử Việt Nam",
