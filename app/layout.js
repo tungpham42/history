@@ -3,6 +3,7 @@ import "bootswatch/dist/united/bootstrap.css";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
   title: "Chào Mừng Đến Với Lịch Sử Việt Nam",
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
