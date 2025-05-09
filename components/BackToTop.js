@@ -32,12 +32,13 @@ const BackToTop = () => {
         <Button
           variant="primary"
           onClick={scrollToTop}
-          className="position-fixed d-flex align-items-center justify-content-center"
+          className="position-fixed bottom-3 end-3 rounded-circle shadow-lg d-flex align-items-center justify-content-center"
           style={{
-            height: "3.5rem",
             bottom: "25px",
             right: "25px",
-            fontSize: "1.25rem",
+            width: "50px",
+            height: "50px",
+            fontSize: "20px",
           }}
         >
           <FontAwesomeIcon icon={faChevronUp} />
